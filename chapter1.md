@@ -1,6 +1,7 @@
 ---
 title: 'Chapter Title Here'
 description: 'Chapter description goes here.'
+free_preview: true
 ---
 
 ## Example coding exercise
@@ -43,7 +44,7 @@ This is an example exercise.
 
 ---
 
-## Insert exercise title here
+## Assigning a value to a variabe
 
 ```yaml
 type: NormalExercise
@@ -51,13 +52,13 @@ key: ddc011c0e5
 xp: 100
 ```
 
-Context was inserted here. 
+We learn to assign values to variables.
 
 `@instructions`
 Assign the number 2 to variable a.
 
 `@hint`
-
+remember we use the operator "<-" to assign a number to a variable.
 
 `@pre_exercise_code`
 ```{r}
@@ -71,7 +72,7 @@ a <-
 
 `@solution`
 ```{r}
-
+a <- 2
 ```
 
 `@sct`
