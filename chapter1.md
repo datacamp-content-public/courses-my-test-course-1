@@ -77,5 +77,8 @@ a <- 2
 
 `@sct`
 ```{r}
+# sct code
+test_error()
+success_msg("Nice work! Success messages are a great way to keep users engaged even after the exercise is over. Try to encourage them to play around in the console to really grasp the concepts you're trying to teach!")
 
 ```
