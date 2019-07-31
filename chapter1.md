@@ -55,10 +55,57 @@ xp: 100
 We learn to assign values to variables.
 
 `@instructions`
-Assign the number 2 to variable a.
+A variable is an entity that stores a value or an object (like a vector, etc.). You can assign a value to the variable ```
+my_var ``` with the following command.
+
+``` 
+my_var <- 4
+```
 
 `@hint`
-remember we use the operator "<-" to assign a number to a variable.
+Complete the code in the script such that it assigns the value 17 to variable x.
+
+`@pre_exercise_code`
+```{r}
+x <- 42
+```
+
+`@sample_code`
+```{r}
+# Assign the value 17 to x.
+x <- 
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+# sct code
+ex() %>% check_object("x") %>% check_equal()
+success_msg("Well done!")
+
+```
+
+---
+
+## creating a vector
+
+```yaml
+type: NormalExercise
+key: f67ec5b842
+xp: 100
+```
+
+
+
+`@instructions`
+Create a vector called "myvec" that contains the numbers 1, 2 and 3.
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -67,18 +114,16 @@ remember we use the operator "<-" to assign a number to a variable.
 
 `@sample_code`
 ```{r}
-a <- 
+myvec <- 
 ```
 
 `@solution`
 ```{r}
-a <- 2
+myvec <- c(1,2,3)
 ```
 
 `@sct`
 ```{r}
-# sct code
-test_error()
-success_msg("Nice work! Success messages are a great way to keep users engaged even after the exercise is over. Try to encourage them to play around in the console to really grasp the concepts you're trying to teach!")
-
+ex() %>% check_object("myvec") %>% check_equal()
+success_msg("Well done!")
 ```
