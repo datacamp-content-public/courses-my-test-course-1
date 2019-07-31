@@ -52,9 +52,6 @@ key: ddc011c0e5
 xp: 100
 ```
 
-We learn to assign values to variables.
-
-`@instructions`
 A variable is an entity that stores a value or an object (like a vector, etc.). You can assign a value to the variable ```
 my_var ``` with the following command.
 
@@ -62,12 +59,15 @@ my_var ``` with the following command.
 my_var <- 4
 ```
 
-`@hint`
+`@instructions`
 Complete the code in the script such that it assigns the value 17 to variable x.
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
-x <- 42
+
 ```
 
 `@sample_code`
@@ -78,7 +78,7 @@ x <-
 
 `@solution`
 ```{r}
-
+x <- 17
 ```
 
 `@sct`
