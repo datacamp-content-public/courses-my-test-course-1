@@ -210,6 +210,7 @@ x <-
 
 `@solution`
 ```{r}
+# Assign the value 17 to x.
 x <- 17
 ```
 
@@ -252,6 +253,7 @@ x <- 17
 
 `@solution`
 ```{r}
+# Print the value of x!
 x
 ```
 
@@ -307,6 +309,13 @@ z <-
 
 `@solution`
 ```{r}
+# Assign the value 17 to x
+x <- 17
+
+# Assign the value 289 to y
+y <- 289
+
+# create the variable z
 z <- x + y
 ```
 
@@ -363,6 +372,7 @@ x <-
 
 `@solution`
 ```{r}
+# Create the vector
 x <- c(5, 2, 6)
 ```
 
@@ -424,8 +434,11 @@ z <-
 
 `@solution`
 ```{r}
+# Create the vector x
 x <- c(5, 8, 10)
+# Create the vector y
 y <- c(4, 6, 10)
+# Create the vector z
 z <- c(9, 14, 20)
 ```
 
@@ -467,12 +480,13 @@ x <-
 
 # Create the variable z
 z <-
-
 ```
 
 `@solution`
 ```{r}
+# Create the vector x
 x <- c(5, 8, 10)
+# Create the variable z
 z <- sum(x)
 ```
 
