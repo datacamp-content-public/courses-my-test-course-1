@@ -148,7 +148,6 @@ Or, if you want to multiply the value stored in ```x``` by the value stored in `
 x*y
 ```
 
-
 `@instructions`
 Assign to x the value 17. Assign to y the value 289. Create a new variable ```z``` that is the result of adding the two variables ```x``` and ```y```.
 
@@ -185,4 +184,96 @@ ex() %>% check_object("x") %>% check_equal()
 ex() %>% check_object("y") %>% check_equal()
 ex() %>% check_object("z") %>% check_equal()
 success_msg("Well done!")
+```
+
+---
+
+## Creating Vectors
+
+```yaml
+type: NormalExercise
+key: 3a5490d847
+xp: 100
+```
+
+Vectors are one-dimensional arrays that can hold numerical, character or logical values.
+In R, you create vectors using the c() function. For example, suppose you want to create a vector by the name ```myvec``` that contains the values 1, 2 and 5, you would do that as follows,
+```
+myvec <- c(1,2,5)
+```
+Notice that the order of the elements of the vector is important. Now to print out ```myvec``` we will type it in the console. The result will be,
+```
+myvec
+[1] 1 2 5
+```
+You can also assign characters to a vector like the following example.
+```
+mycharvec <- c("apples","oranges")
+```
+
+
+`@instructions`
+Create a vector that contains the values 5, 2 and 6 (in that order) and call it x.
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# Create the vector
+x <- 
+```
+
+`@solution`
+```{r}
+x <- c(5, 2, 6)
+```
+
+`@sct`
+```{r}
+ex() %>% check_object("x") %>% check_equal()
+success_msg("Well done!")
+```
+
+---
+
+## Working with Vectors
+
+```yaml
+type: NormalExercise
+key: 881475d3b1
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
