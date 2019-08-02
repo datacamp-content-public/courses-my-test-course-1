@@ -60,7 +60,6 @@ You can use R to perform simple or complicated arithmetic calculations. Note tha
 - division ```/```
 - exponentiation ```^```
 
-
 `@instructions`
 Use R operators to perform the following operations
 - add 2 to 4
@@ -131,7 +130,7 @@ Logical operators are an important part of R programming. Below you can see a li
 - ```x``` and ```y``` ```x&y```
 - test if x is TRUE ```isTRUE(x)```
 
-For example, if running the code ```2 < 4``` will return TRUE, ```5>=5``` will return TRUE, ```3 <= 1``` will return FALSE, ```2<4 | 2>4``` will return TRUE because, ``` 2<4 & 2>4``` will return FALSE, etc. 
+For example, if running the code ```2 < 4``` will return TRUE, ```5>=5``` will return TRUE, ```3 <= 1``` will return FALSE, ```2<4 | 2>4``` will return TRUE because, ``` 2<4 & 2>4``` will return FALSE, etc.
 
 `@instructions`
 Use the logical R operators you learned here to perform the following operations. Determine if the following is TRUE or FALSE
@@ -351,7 +350,6 @@ You can also assign characters to a vector like the following example.
 ```
 mycharvec <- c("apples","oranges")
 ```
-
 
 `@instructions`
 Create a vector that contains the values 5, 2 and 6 (in that order) and call it x.
