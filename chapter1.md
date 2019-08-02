@@ -44,7 +44,7 @@ This is an example exercise.
 
 ---
 
-## Insert exercise title here
+## Arithmetic Operators
 
 ```yaml
 type: NormalExercise
@@ -52,7 +52,7 @@ key: ac4cf86e36
 xp: 100
 ```
 
-You can use R to perform simple or complicated arithmetic calculations. Below is a list of some of a number of most-widely used arithmetic operators in R.
+You can use R to perform simple or complicated arithmetic calculations. Note that binary operators work on vectors and matrices as well as scalars. Below is a list of some of a number of most-widely used arithmetic operators in R.
 
 - addition ```+```
 - subtraction ```-```
@@ -87,16 +87,18 @@ Use R operators to perform the following operations
 
 # divide 42 by 6
 
-# raise 5 to the power of 31
 ```
 
 `@solution`
 ```{r}
-6
-10
-5*63
-42/6
-5^31
+# add 2 to 4
+2 + 4
+# subtract 5 from 15
+15 - 5
+# Multiply 5 by 63
+5 * 63
+# divide 42 by 6
+42 / 6
 ```
 
 `@sct`
@@ -105,7 +107,71 @@ ex() %>% check_output(2+4)
 ex() %>% check_output(15 -5)
 ex() %>% check_output(5*63)
 ex() %>% check_output(42/6)
-ex() %>% check_output(5^2)
+```
+
+---
+
+## Logical Operatos
+
+```yaml
+type: NormalExercise
+key: da7fae2478
+xp: 100
+```
+
+Logical operators are an important part of R programming. Below you can see a list of logical operators used in R.
+
+- less than ```<```
+- less than or equal to ```<=```
+- greater than ```>```
+- greater than or equal to ```>=```
+- equal to ```==``` **_Note:_** the single equal sign is NOT used to demonstrated equality. You should use the double equal signs for the purpose.
+- not equal to ```!=```
+- ```x``` or ```y``` ```x|y```
+- ```x``` and ```y``` ```x&y```
+- test if x is TRUE ```isTRUE(x)```
+
+For example, if running the code ```2 < 4``` will return TRUE, ```5>=5``` will return TRUE, ```3 <= 1``` will return FALSE, ```2<4 | 2>4``` will return TRUE because, ``` 2<4 & 2>4``` will return FALSE, etc. 
+
+`@instructions`
+Use the logical R operators you learned here to perform the following operations. Determine if the following is TRUE or FALSE
+- 2 is less than 1 
+- 2 is greater than 1
+- either 2 is greater than 1 OR 2 is greater than 5
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# determine if 2 is less than 1
+
+# determine if 2 is greater than or equal to 2
+
+# determine if either 2 is greater than 1 OR 2 is greater than 5
+
+```
+
+`@solution`
+```{r}
+# determine if 2 is less than 1
+2 < 1
+# determine if 2 is greater than or equal to 2
+2 >= 2
+# determine if either 2 is greater than 1 OR 2 is greater than 5
+2 > 1 | 2 > 5
+```
+
+`@sct`
+```{r}
+ex() %>% check_output(FALSE)
+ex() %>% check_output(TRUE)
+ex() %>% check_output(TRUE)
 ```
 
 ---
