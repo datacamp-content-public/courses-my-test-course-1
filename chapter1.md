@@ -44,6 +44,72 @@ This is an example exercise.
 
 ---
 
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: ac4cf86e36
+xp: 100
+```
+
+You can use R to perform simple or complicated arithmetic calculations. Below is a list of some of a number of most-widely used arithmetic operators in R.
+
+- addition ```+```
+- subtraction ```-```
+- multiplication ```*```
+- division ```/```
+- exponentiation ```^```
+
+
+`@instructions`
+Use R operators to perform the following operations
+- add 2 to 4
+- subtract 5 from 15
+- multiply 5 by 63
+- divide 42 by 6
+- raise 5 to the power of 31
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# add 2 to 4
+
+# subtract 5 from 15
+
+# Multiply 5 by 63
+
+# divide 42 by 6
+
+# raise 5 to the power of 31
+```
+
+`@solution`
+```{r}
+6
+10
+5*63
+42/6
+5^31
+```
+
+`@sct`
+```{r}
+ex() %>% check_output(2+4)
+ex() %>% check_output(15 -5)
+ex() %>% check_output(5*63)
+ex() %>% check_output(42/6)
+ex() %>% check_output(5^2)
+```
+
+---
+
 ## Assigning a value to a variabe
 
 ```yaml
@@ -250,10 +316,23 @@ key: 881475d3b1
 xp: 100
 ```
 
-
+You can do different types of calculations with vectors. For instance, you can multiply all the elements of a vector by a certain number, divide all the values of a vector by a certain number or add corresponding values of two vectors together. **_Note_** the size of the vectors should be exactly the same for them to be added together. 
+For example, the following three expressions are exactly the same,
+```
+c(1, 2, 3) + c(4, 5, 6)
+c(1+4, 2+5, 3+6)
+c(5, 7, 9)
+```
+You can do the calculations using the variables that represent vectors.
+```
+a <- c(1, 2, 3)
+b <- c(4, 5, 6)
+a + b
+```
 
 `@instructions`
-
+Create the vector ```x``` that contains numbers 5, 8 and 10. Create the vector ```y``` that contains numbers 4, 6, and 10. Create the vector ```z``` that is the sum of ```x``` and ```y```. To add the elements, use the variables representing the vectors.
+Notice how each element of ```x``` is added to its corresponding element of ```y``` to make their corresponding element of ```z```.
 
 `@hint`
 
@@ -265,15 +344,75 @@ xp: 100
 
 `@sample_code`
 ```{r}
+# Create the vector x
+x <- 
+
+# Create the vector y
+y <- 
+
+# Create the vector z
+z <- 
+
 
 ```
 
 `@solution`
 ```{r}
-
+x <- c(5, 8, 10)
+y <- c(4, 6, 10)
+z <- c(9, 14, 20)
 ```
 
 `@sct`
 ```{r}
+ex() %>% check_object("x") %>% check_equal()
+ex() %>% check_object("y") %>% check_equal()
+ex() %>% check_object("z") %>% check_equal()
+success_msg("Well done!")
+```
 
+---
+
+## Copy of Working with Vectors
+
+```yaml
+type: NormalExercise
+key: 6fe1f9a68c
+xp: 100
+```
+
+You can add the sum of the elements of a vector using the function ```sum()```. For instance, ```sum(a)``` will add the values of the elements stored in the vector.
+
+`@instructions`
+Create the vector ```x``` that contains numbers 5, 8 and 10. Defind the variable ```z``` as the sum of the elements of ```x```.
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# Create the vector x
+x <- 
+
+# Create the variable z
+z <-
+
+```
+
+`@solution`
+```{r}
+x <- c(5, 8, 10)
+z <- sum(x)
+```
+
+`@sct`
+```{r}
+ex() %>% check_object("x") %>% check_equal()
+ex() %>% check_object("z") %>% check_equal()
+success_msg("Well done!")
 ```
